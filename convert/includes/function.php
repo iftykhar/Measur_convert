@@ -16,7 +16,7 @@ const LENGTH_TO_METER = array(
 // Length
 function convert_to_meters($value, $from_unit){
     if(array_key_exists($from_unit, LENGTH_TO_METER)){
-        return $value * GlobalLENGTH_TO_METER[$from_unit];
+        return $value * LENGTH_TO_METER[$from_unit];
     }else{
         return "Unsupported unit,";
     }
